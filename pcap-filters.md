@@ -11,7 +11,7 @@ ip and port 53 and (udp[11] & 0xf != 0 or udp[10] & 0x80 = 0)
 ## show zero tcp window requests
 
 ```
-'tcp[14:2] == 0'
+tcp[14:2] == 0
 ```
 
 `tcp[14:2] == 0`: TCP Window Size field is 0
